@@ -1,15 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // 展示本地存储能力55555
-=======
-    // 展示本地存储能力44444
->>>>>>> dev
-=======
-    // 展示本地存储能力44444
->>>>>>> dev
+    // 展示本地存储能力777
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
