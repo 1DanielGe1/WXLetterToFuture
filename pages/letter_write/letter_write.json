@@ -1,3 +1,4 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "写信",
+  "disableScroll": true
 }

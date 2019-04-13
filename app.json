@@ -18,18 +18,28 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#FFBC00",
+    "backgroundColor": "#F8F8F8",
+    "borderStyle": "black",
     "list": [
       {
         "text": "信件",
-        "pagePath": "pages/letter_main/letter_main"
+        "pagePath": "pages/letter_main/letter_main",
+        "iconPath": "assets/letter_bottom.png",
+        "selectedIconPath": "assets/letter_bottom_active.png"
       },
       {
         "text": "广场",
-        "pagePath": "pages/square_main/square_main"
+        "pagePath": "pages/square_main/square_main",
+        "iconPath": "assets/square_bottom.png",
+        "selectedIconPath": "assets/square_bottom_active.png"
       },
       {
         "text": "我的",
-        "pagePath": "pages/me_main/me_main"
+        "pagePath": "pages/me_main/me_main",
+        "iconPath": "assets/me_bottom.png",
+        "selectedIconPath": "assets/me_bottom_active.png"
       }
     ]
   }

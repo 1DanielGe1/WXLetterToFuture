@@ -1,2 +1,14 @@
-<!--pages/letter_write/letter_write.wxml-->
-<text>pages/letter_write/letter_write.wxml</text>
+<view class="writeletter">
+
+<view class="letter_choose_container">
+
+</view>
+ <scroll-view class="letter_input_container" scroll-y>
+    <view class="container">
+        <view class="content" wx:for="{{11}}" wx:key="item">
+            {{item}}
+        </view>
+    </view>
+</scroll-view> 
+
+</view>
