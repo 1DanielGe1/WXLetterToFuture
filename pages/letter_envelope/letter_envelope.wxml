@@ -3,40 +3,39 @@
 
 
 
-    <text class='top_text'>只要19.99您就可以得到手写版的信件啦！</text>
+  <text class='top_text'>只要19.99您就可以得到手写版的信件啦！</text>
 
 
-    <view class='normal_text'>
-        <text>收信人:</text>
-    </view>
+  <view class='normal_text'>
+    <text>收信人:</text>
+  </view>
 
-    <view class="inputText_box">
-        <input id="name_text" type="text" placeholder="姓名" />
-    </view>
-
-
-    <text class='normal_text'>地址:</text>
-
-    <view class="inputText_box">
-        <input id="address_text" type="text" placeholder="省、市、区、街道、门牌号" />
-    </view>
+  <view class="inputText_box">
+    <input id="name_text" type="text" placeholder="姓名" />
+  </view>
 
 
-    <text class='normal_text'>送信时间：</text>
+  <text class='normal_text'>地址:</text>
 
-    <view class="inputText_box">
-        <input id="time_text" type="text" placeholder="2029年 05月 01日" />
-    </view>
-
-
-    <text class='tip_text'>我们会将您的信制作成精美的纸质信件，装在定制的信封中，盖上那通往未来的火漆印章，放入时光邮筒，临近收信日期投递</text>
+  <view class="inputText_box">
+    <input id="address_text" type="text" placeholder="省、市、区、街道、门牌号" />
+  </view>
 
 
+  <text class='normal_text'>送信时间：</text>
 
-    <image class='img' src='../../assets/letter_letter_envelope_img.png' mode='aspectFit'></image>
+  <view class="inputText_box">
+    <input id="time_text" type="text" placeholder="2029年 05月 01日" />
+  </view>
 
 
-    <button id='btn_pay'>支付</button>
+  <text class='tip_text'>我们会将您的信制作成精美的纸质信件，装在定制的信封中，盖上那通往未来的火漆印章，放入时光邮筒，临近收信日期投递</text>
+
+
+
+  <image class='img' src='../../assets/letter_letter_envelope_img.png' mode='aspectFit'></image>
+
+
+  <button id='btn_pay'>支付</button>
 
 </view>
-

@@ -2,27 +2,27 @@
 <view class='container'>
 
 
-    <text class='normal_text'>寄给:</text>
+  <text class='normal_text'>寄给:</text>
 
 
-    <view class="mailbox">
-        <input id="email_address" type="text" placeholder="请您的输入邮箱......" />
-    </view>
+  <view class="mailbox">
+    <input id="email_address" type="text" placeholder="请您的输入邮箱......" />
+  </view>
 
 
-    <text class='normal_text'>寄往:</text>
+  <text class='normal_text'>寄往:</text>
 
-    <view class="timebox">
-        <input id="email_time" type="text" placeholder="2029年 05月 01日" />
-    </view>
-
-
-    <text class='tip_text'>我们会在您指定的日子，将您的信投递到您的邮箱\n</text>
+  <view class="timebox">
+    <input id="email_time" type="text" placeholder="2029年 05月 01日" />
+  </view>
 
 
+  <text class='tip_text'>我们会在您指定的日子，将您的信投递到您的邮箱\n</text>
 
 
-    <text class='bottom_text'>时间不问归处
+
+
+  <text class='bottom_text'>时间不问归处
 这封寄往未来的信
 不可查找
 不可撤回
@@ -32,10 +32,10 @@
 等待收获</text>
 
 
-    <image class='btn_send' src='../../assets/letter_letter_send_btnsend.png'></image>
+  <image class='btn_send' src='../../assets/letter_letter_send_btnsend.png'></image>
 
 
-    <text class='link_to_envelope' bindtap='linkToEnvelope'>获取精美纸质信件......</text>
+  <text class='link_to_envelope' bindtap='linkToEnvelope'>获取精美纸质信件......</text>
 
 
 </view>
