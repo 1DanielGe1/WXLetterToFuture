@@ -33,5 +33,4 @@
     </view>
 
     <image class='btn_Save' src='../../assets/letter_letter_write_Save.png' bindtap='onclick_SaveLetter'></image>
-
 </view>
