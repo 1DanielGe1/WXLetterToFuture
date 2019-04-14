@@ -37,4 +37,5 @@
 
 
   <button id='btn_pay'>支付</button>
+
 </view>
