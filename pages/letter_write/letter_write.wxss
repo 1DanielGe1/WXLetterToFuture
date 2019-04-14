@@ -1,1 +1,128 @@
-/* pages/letter_write/letter_write.wxss */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 25rpx;
+}
+
+.letter_input {
+    display: flex;
+    width: 100%;
+    height: 800rpx;
+    flex-shrink: 1;
+    flex-grow: 1;
+    border-left: 1px solid #9b9b9b;
+    border-top: 1px solid #9b9b9b;
+    border-right: 1px solid #9b9b9b;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.letter_choose_container {
+    display: flex;
+    height: 70rpx;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top_choose_icon {
+    display: flex;
+    width: 70rpx;
+    height: 50rpx;
+    padding: 10px;
+}
+
+.letter_input_container {
+    position: relative;
+    width: 100%;
+    min-height: 850rpx;
+    padding-top: 10rpx;
+    padding-left: 20rpx;
+    padding-right: 0rpx;
+    padding-bottom: 20rpx;
+}
+
+.input_text {
+    display: flex;
+    width: 100%;
+    height: 800rpx;
+    background: #9b9b9b;
+}
+
+.letter_input_bottom {
+    display: flex;
+    height: 150rpx;
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-left: 1px solid #9b9b9b;
+    border-bottom: 1px solid #9b9b9b;
+    border-right: 1px solid #9b9b9b;
+}
+
+.add_picture_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.add_picture {
+    display: flex;
+    width: 100rpx;
+    height: 100rpx;
+    padding: 10rpx;
+    margin: 0px 5px;
+    border: 1px solid #9b9b9b;
+}
+
+.signature {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    font-size: 18px;
+}
+
+.get_location {
+    display: flex;
+    width: 100%;
+    padding: 20rpx;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.icon_location {
+    display: flex;
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.location_text {
+    font-size: 14px;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.btn_Save {
+    display: flex;
+    margin-top: -30rpx;
+    margin-left: 520rpx;
+    width: 120rpx;
+    height: 120rpx;
+    padding: 15rpx;
+    flex-shrink: 0;
+    flex-grow: 0;
+}

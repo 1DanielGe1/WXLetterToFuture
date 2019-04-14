@@ -1,1 +1,100 @@
 /* pages/letter_send/letter_send.wxss */
+
+.container{
+    display: flex;
+    padding: 50rpx 25rpx 25rpx 25rpx;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+.normal_text {
+    display: flex;
+    margin-left: 100rpx;
+    font-size: 20px;
+    height: 100rpx;
+    justify-content: left;
+    align-items: center;
+}
+
+.mailbox {
+    display: flex;
+    margin: 0rpx 100rpx;
+    height: 70rpx;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+#email_address {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.timebox {
+    display: flex;
+    margin: 0rpx 100rpx;
+     height: 70rpx;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+#email_time {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tip_text {
+    display: flex;
+    height: 70rpx;
+    margin: 0rpx 100rpx;
+    padding-bottom: 50rpx;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.bottom_text {
+    display: flex;
+    margin-left: 100rpx;
+    padding-top: 50rpx;
+    font-size: 18px;
+}
+
+.btn_send {
+    display: flex;
+    margin-top: -50rpx;
+    margin-left: 520rpx;
+    width: 100rpx;
+    height: 100rpx;
+    padding: 15rpx;
+    border-radius: 50%;
+    border: 2px solid #9b9b9b;
+}
+
+.link_to_envelope {
+    display: flex;
+    margin: 10rpx 100rpx;
+    font-size: 14px;
+}
+
+.link_to_envelope ::selection {
+    background: black;
+}

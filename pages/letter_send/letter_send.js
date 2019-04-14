@@ -62,5 +62,16 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+
+linkToEnvelope:function(){
+    wx.navigateTo({
+        url: '../letter_envelope/letter_envelope',
+        success: function(res) {},
+        fail: function(res) {},
+        complete: function(res) {},
+    })
+}
+
 })
