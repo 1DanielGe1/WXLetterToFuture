@@ -1,2 +1,23 @@
 <!--pages/letter_main/letter_main.wxml-->
-<text>pages/letter_main/letter_main.wxml</text>
+<view class='container'>
+  <view class="header">
+    <text class="">心若没有栖息的地方，到哪里都是在流浪</text>
+    <text class="author">—三毛</text>
+  </view>
+  <block wx:for="{{letterList}}">
+    <view class="link-top"></view>
+    <view class="letter">
+      <view class="letter-state">
+        <image class="letter-image"></image>
+        <text>{{item.timeSurplus}}</text>
+      </view>
+      <view class="letter-detail">
+        <text>{{item.timeSeal}}</text>
+        <text>{{item.site}}</text>
+      </view>
+    </view>
+  </block>
+  <view>
+    <image class="add_icon" src="/assets/add.png"></image>
+  </view>
+</view>

@@ -1,3 +1,5 @@
 {
+  "navigationBarTitleText": "致未来",
+  "enablePullDownRefresh": true,
   "usingComponents": {}
 }
