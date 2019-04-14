@@ -37,4 +37,8 @@
 
     <text class='link_to_envelope' bindtap='linkToEnvelope'>获取精美纸质信件......</text>
 
+<<<<<<< HEAD
 </view>
+=======
+</view>
+>>>>>>> dev
