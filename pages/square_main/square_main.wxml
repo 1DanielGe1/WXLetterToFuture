@@ -1,2 +1,26 @@
 <!--pages/square_main/square_main.wxml-->
-<text>pages/square_main/square_main.wxml</text>
+<view class='container'>
+  <view class="header">
+    <text>时光荏苒,光阴不再</text>
+    <text>未来的你是否不负所望...</text>
+  </view>
+  <block wx:for="{{otherList}}">
+    <view class="link-top"></view>
+    <view class="other-letter">
+      <view class="other-user">
+        <image class="user-image" src="{{item.avatar}}"></image>
+        <text>{{item.userName}}</text>
+      </view>
+      <view class="other-content">
+        <text>{{item.letterContent}}</text>
+        <view class="content-voice">
+          <text>{{item.writeDate}}</text>
+          <icon></icon>
+        </view>
+      </view>
+      <view class="content-image">
+        <image class="letter-image"></image>
+      </view>
+    </view>
+  </block>
+</view>
