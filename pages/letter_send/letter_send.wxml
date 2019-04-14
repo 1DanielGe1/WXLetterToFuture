@@ -1,5 +1,5 @@
 <!--pages/letter_send/letter_send.wxml-->
-<view id='mainbg'>
+<view class='container'>
 
 
     <text class='normal_text'>寄给:</text>
@@ -32,7 +32,7 @@
 等待收获</text>
 
 
-    <image class='btn_send' src='../../assets/icon_letter_send_btnsend.png'></image>
+    <image class='btn_send' src='../../assets/letter_letter_send_btnsend.png'></image>
 
 
     <text class='link_to_envelope' bindtap='linkToEnvelope'>获取精美纸质信件......</text>

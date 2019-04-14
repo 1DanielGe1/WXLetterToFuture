@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/letter_send/letter_send",
+    "pages/letter_write/letter_write",
 
     "pages/letter_main/letter_main",
     "pages/letter_detail/letter_detail",
-    "pages/letter_write/letter_write",
-   
+    
+    "pages/letter_send/letter_send",
     "pages/letter_envelope/letter_envelope",
     "pages/square_main/square_main",
     "pages/square_detail/square_detail",

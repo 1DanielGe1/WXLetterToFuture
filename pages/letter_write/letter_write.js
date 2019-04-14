@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      Time_Wirte:"2019/4/9",
+      isHidden_Pic_two:true,
+      isHidden_Pic_three: true
   },
 
   /**
@@ -62,5 +64,29 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+
+  onclick_add_picture_one:function(){
+      this.setData({
+          isHidden_Pic_two:false
+      })
+  },
+    onclick_add_picture_two:function(){
+        this.setData({
+            isHidden_Pic_three: false
+        })
+    },
+    onclick_add_picture_three:function(){
+
+    },
+
+    onclick_SaveLetter:function(){
+        wx.navigateTo({
+            url: '../letter_send/letter_send',
+            success: function(res) {},
+            fail: function(res) {},
+            complete: function(res) {},
+        })
+    }
 })

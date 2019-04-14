@@ -1,5 +1,14 @@
 /* pages/letter_envelope/letter_envelope.wxss */
 
+.container{
+     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 25rpx;
+}
+
+
+
 .top_text {
     display: flex;
     margin-top: 100rpx;

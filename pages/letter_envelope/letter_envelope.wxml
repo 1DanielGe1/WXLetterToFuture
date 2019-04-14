@@ -1,5 +1,5 @@
 <!--pages/letter_send/letter_send.wxml-->
-<view id='mainbg'>
+<view class='container'>
 
 
 
@@ -33,7 +33,7 @@
 
 
 
-    <image class='img' src='../../assets/img_letter_envelope_img.png' mode='aspectFit'></image>
+    <image class='img' src='../../assets/letter_letter_envelope_img.png' mode='aspectFit'></image>
 
 
     <button id='btn_pay'>支付</button>
