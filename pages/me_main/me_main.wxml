@@ -1,2 +1,15 @@
 <!--pages/me_main/me_main.wxml-->
-<text>pages/me_main/me_main.wxml</text>
+<view class="container">
+  <view class="avatar">
+    <image src="/assets/me.jpg"></image>
+  </view>
+  <view class="name">ZL</view>
+  <view class="item">
+    <text>足迹</text>
+    <text>></text>
+  </view>
+  <view class="item">
+    <text>设置</text>
+    <text>></text>
+  </view>
+</view>

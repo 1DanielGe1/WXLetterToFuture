@@ -5,6 +5,38 @@ Page({
    * 页面的初始数据
    */
   data: {
+    otherList: [
+      {
+        avatar: "/assets/me.jpg",
+        userName: "ZL",
+        letterContent: "三十年后的你：如果你还在打拼,未来的你是否不负众望...",
+        writeDate: "2019年4月14日"
+      },
+      {
+        avatar: "/assets/me.jpg",
+        userName: "ZL",
+        letterContent: "三十年后的你：如果你还在打拼,未来的你是否不负众望...",
+        writeDate: "2019年4月14日"
+      },
+      {
+        avatar: "/assets/me.jpg",
+        userName: "ZL",
+        letterContent: "三十年后的你：如果你还在打拼,未来的你是否不负众望...",
+        writeDate: "2019年4月14日"
+      },
+      {
+        avatar: "/assets/me.jpg",
+        userName: "ZL",
+        letterContent: "三十年后的你：如果你还在打拼,未来的你是否不负众望...",
+        writeDate: "2019年4月14日"
+      },
+      {
+        avatar: "/assets/me.jpg",
+        userName: "ZL",
+        letterContent: "三十年后的你：如果你还在打拼,未来的你是否不负众望...",
+        writeDate: "2019年4月14日"
+      }
+    ]
 
   },
 
