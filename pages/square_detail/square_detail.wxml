@@ -1,2 +1,37 @@
-<!--pages/square_detail/square_detail.wxml-->
-<text>pages/square_detail/square_detail.wxml</text>
+<view class="squaredetail">
+
+  <view class="squareaudio">
+  <image src="/assets/microphone.png" />
+  </view>
+  <scroll-view class="square_detail_container" scroll-y>
+      <text>dasdasdasda我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我</text>
+      <view class="container">
+          <view class="content" wx:for="{{5}}" wx:key="item">
+              {{item}}
+          </view>
+      </view>
+  </scroll-view> 
+
+  <view class="ifoshow">
+    <view class="ifoshow-left">
+      <view class="location">
+        <image src="/assets/location.png" />
+        <text style="font-size:30rpx; margin-bottom:50rpx;">重庆市</text>
+      </view>
+      <view class="userimage">
+        <image src="/assets/userimage1.png" />
+        <image src="/assets/userimage1.png" />
+      </view>
+      </view>
+      <view class="ifoshow-right">
+        <text>寄信人:</text>
+        <text>曾经的你</text>
+        <text>2019/4/14</text>
+      </view>
+  </view>
+  <view class="encourage">
+  <image src="/assets/encourage.png"/>
+    <image src="/assets/comment.png"/>
+  </view>
+
+</view>
