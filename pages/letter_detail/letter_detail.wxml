@@ -1,39 +1,40 @@
 <view class="container">
-<view class="letterdetail">
+  <view class="letterdetail">
 
-  <view class="letteraudio">
-  <image src="/assets/microphone.png" />
-  </view>
-  <scroll-view class="letter_detail_container" scroll-y>
+    <view class="letteraudio">
+      <image src="/assets/microphone.png" />
+    </view>
+    <scroll-view class="letter_detail_container" scroll-y>
       <text>dasdasdasda我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我</text>
       <!-- <view class="container1">
           <view class="content" wx:for="{{5}}" wx:key="item">
               {{item}}
           </view>
       </view> -->
-  </scroll-view> 
+    </scroll-view>
 
-  <view class="ifoshow">
-    <view class="ifoshow-left">
-      <view class="location">
-        <image src="/assets/location.png" />
-        <text style="font-size:30rpx; margin-bottom:50rpx;">重庆市</text>
-      </view>
-      <view class="userimage">
-        <image src="/assets/userimage1.png" />
-        <image src="/assets/userimage1.png" />
-      </view>
+    <view class="ifoshow">
+      <view class="ifoshow-left">
+        <view class="location">
+          <image src="/assets/location.png" />
+          <text style="font-size:30rpx; margin-bottom:50rpx;">重庆市</text>
+        </view>
+        <view class="userimage">
+          <image src="/assets/userimage1.png" />
+          <image src="/assets/userimage1.png" />
+        </view>
       </view>
       <view class="ifoshow-right">
         <text>寄信人:</text>
         <text>曾经的你</text>
         <text>2019/4/14</text>
       </view>
-  </view>
-  <view class="encourage">
-    <image src="/assets/comment.png"/>
-    <image src="/assets/encourage.png"/>
+    </view>
+    <view class="encourage">
+      <image src="/assets/comment.png" />
+      <image src="/assets/encourage.png" />
+    </view>
+
   </view>
 
-</view>
 </view>

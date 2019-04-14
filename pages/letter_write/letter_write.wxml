@@ -1,36 +1,36 @@
 <view class="container">
 
 
-    <scroll-view class="letter_input" scroll-y>
-        <view class='letter_choose_container'>
-            <image class='top_choose_icon' id='letter_input_font' src='../../assets/letter_letter_write_changeFont.png'></image>
-            <image class='top_choose_icon' id='letter_input_bg' src='../../assets/letter_letter_write_changeBg.png'></image>
-            <image class='top_choose_icon' id='letter_input_sound_recording' src='../../assets/letter_letter_write_Sound_Record.png'></image>
-        </view>
-
-        <view class='letter_input_container'>
-            <textarea id='input_text' maxlength='5000' auto-auto-focus='true' auto-height placeholder="在这里写信吧......"></textarea>
-        </view>
-    </scroll-view>
-
-    <view class='letter_input_bottom'>
-        <view class='add_picture_box'>
-            <image class='add_picture' id='add_picture_one' src='../../assets/letter_letter_write_addPicture.png' bindtap='onclick_add_picture_one'></image>
-            <image class='add_picture' id='add_picture_two' src='../../assets/letter_letter_write_addPicture.png' hidden='{{isHidden_Pic_two}}' bindtap='onclick_add_picture_two'></image>
-            <image class='add_picture' id='add_picture_three' src='../../assets/letter_letter_write_addPicture.png' hidden='{{isHidden_Pic_three}}' bindtap='onclick_add_picture_three'></image>
-        </view>
-
-        <view class='signature'>
-            <text>寄信人：\n曾经的你\n</text>
-            <text>{{Time_Wirte}}</text>
-        </view>
+  <scroll-view class="letter_input" scroll-y>
+    <view class='letter_choose_container'>
+      <image class='top_choose_icon' id='letter_input_font' src='../../assets/letter_letter_write_changeFont.png'></image>
+      <image class='top_choose_icon' id='letter_input_bg' src='../../assets/letter_letter_write_changeBg.png'></image>
+      <image class='top_choose_icon' id='letter_input_sound_recording' src='../../assets/letter_letter_write_Sound_Record.png'></image>
     </view>
 
+    <view class='letter_input_container'>
+      <textarea id='input_text' maxlength='5000' auto-auto-focus='true' auto-height placeholder="在这里写信吧......"></textarea>
+    </view>
+  </scroll-view>
 
-    <view class='get_location'>
-        <image class='icon_location' src='../../assets/letter_letter_write_Location.png'></image>
-        <text class='location_text'>获取当前位置</text>
+  <view class='letter_input_bottom'>
+    <view class='add_picture_box'>
+      <image class='add_picture' id='add_picture_one' src='../../assets/letter_letter_write_addPicture.png' bindtap='onclick_add_picture_one'></image>
+      <image class='add_picture' id='add_picture_two' src='../../assets/letter_letter_write_addPicture.png' hidden='{{isHidden_Pic_two}}' bindtap='onclick_add_picture_two'></image>
+      <image class='add_picture' id='add_picture_three' src='../../assets/letter_letter_write_addPicture.png' hidden='{{isHidden_Pic_three}}' bindtap='onclick_add_picture_three'></image>
     </view>
 
-    <image class='btn_Save' src='../../assets/letter_letter_write_Save.png' bindtap='onclick_SaveLetter'></image>
+    <view class='signature'>
+      <text>寄信人：\n曾经的你\n</text>
+      <text>{{Time_Wirte}}</text>
+    </view>
+  </view>
+
+
+  <view class='get_location'>
+    <image class='icon_location' src='../../assets/letter_letter_write_Location.png'></image>
+    <text class='location_text'>获取当前位置</text>
+  </view>
+
+  <image class='btn_Save' src='../../assets/letter_letter_write_Save.png' bindtap='onclick_SaveLetter'></image>
 </view>
