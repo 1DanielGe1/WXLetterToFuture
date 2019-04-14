@@ -9,8 +9,8 @@
   flex-direction:row;
   border-top-left-radius: 16rpx;
   border-top-right-radius: 16rpx;
-  margin-left: 10rpx;
-  width: 730rpx;
+  
+  width: 700rpx;
   height: 80rpx;
   background: #FFBC00;
 }
@@ -28,13 +28,12 @@
     flex-direction: row;
     justify-content: center; 
 
-    margin-left: 10rpx;
-    width: 730rpx;
+    width: 700rpx;
     height: 70vh;
     background: #FFBC00;
 }
 
- .container {
+ .container1 {
     position: absolute;  /*使用absolute的原因是因为为了防止第一个子视图有margin-top时，造成顶部留白的情况*/
     left: 0;
     top: 0;
@@ -58,8 +57,7 @@
   flex-direction:row;
   border-bottom-left-radius: 16rpx;
   border-bottom-right-radius: 16rpx;
-  margin-left: 10rpx;
-  width: 730rpx;
+  width: 700rpx;
   height: 180rpx;
   background: #FFBC00;
 }

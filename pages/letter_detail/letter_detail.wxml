@@ -1,3 +1,4 @@
+<view class="container">
 <view class="letterdetail">
 
   <view class="letteraudio">
@@ -5,11 +6,11 @@
   </view>
   <scroll-view class="letter_detail_container" scroll-y>
       <text>dasdasdasda我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我我是谁我</text>
-      <view class="container">
+      <!-- <view class="container1">
           <view class="content" wx:for="{{5}}" wx:key="item">
               {{item}}
           </view>
-      </view>
+      </view> -->
   </scroll-view> 
 
   <view class="ifoshow">
@@ -34,4 +35,5 @@
     <image src="/assets/encourage.png"/>
   </view>
 
+</view>
 </view>
