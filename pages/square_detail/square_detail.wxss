@@ -1,1 +1,111 @@
-/* pages/square_detail/square_detail.wxss */
+.squaredetail {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.squareaudio{
+  display: flex;
+  flex-direction:row;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+  width: 700rpx;
+  height: 6%;
+  background: #FFBC00;
+}
+
+.squareaudio image {
+  margin:auto 10rpx auto auto;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100rpx;
+}
+
+.square_detail_container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+
+    width: 700rpx;
+    height: 70%;
+    background: #FFBC00;
+}
+
+ .container {
+    position: absolute;  /*使用absolute的原因是因为为了防止第一个子视图有margin-top时，造成顶部留白的情况*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-bottom: 20rpx;
+} 
+
+.content {
+    margin: 20rpx auto 0 auto;
+    width: 710rpx;
+    height: 300rpx;
+    background: #ddd;
+    border-radius: 16rpx;
+    font-size: 80rpx;
+    line-height: 300rpx;
+    text-align: center;
+}
+
+.ifoshow{
+  display: flex;
+  flex-direction:row;
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+  width: 700rpx;
+  height: 14%;
+  background: #FFBC00;
+}
+
+.ifoshow-left{
+  display:flex;
+  flex-direction:column;
+}
+
+.location{
+  margin-left: 10rpx;
+  font-size: 36rpx;
+}
+
+.location image{
+  margin:5rpx auto auto 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 100rpx;
+}
+
+.userimage{
+  display: flex;
+  flex-direction:row;
+  padding-right:30rpx;
+}
+
+.userimage image{
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.ifoshow-right{
+  margin:auto 10rpx auto auto;
+  display:flex;
+  flex-direction:column;
+  font-size:35rpx;
+}
+
+.encourage{
+  display:flex;
+  flex-direction:row;
+  margin-right: 10rpx;
+  height: 9%;
+}
+
+.encourage image{
+  padding-left:30rpx;
+  width: 80rpx;
+  height: 80rpx;
+}

@@ -1,6 +1,6 @@
 /**app.wxss**/
 
 .container {
-    display: flex;
-    padding: 25rpx;
-}
+  padding: 25rpx;
+} 
+
