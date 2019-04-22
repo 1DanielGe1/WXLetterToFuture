@@ -2,9 +2,9 @@
   "pages": [
     
 
+    "pages/letter_write/letter_write",
     "pages/letter_main/letter_main",
     "pages/letter_detail/letter_detail",
-    "pages/letter_write/letter_write",
     "pages/letter_send/letter_send",
     "pages/letter_envelope/letter_envelope",
     "pages/square_main/square_main",
@@ -43,5 +43,10 @@
         "selectedIconPath": "assets/me_bottom_active.png"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置展示"
+    }
   }
 }
