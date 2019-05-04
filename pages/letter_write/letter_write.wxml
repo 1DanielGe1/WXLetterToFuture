@@ -20,6 +20,7 @@
         </view>
       </view>
     </view>
+<<<<<<< HEAD
     <view class="letter_bottom">
       <view class='location_box'>
         <image class='icon_location' src='/assets/location.png'></image>
@@ -28,6 +29,20 @@
       <view class="btn_next_box">
         <image class='btn_next' src='/assets/next.png' bindtap='onclick_next'></image>
       </view>
+=======
+  </scroll-view>
+
+  <view class='letter_input_bottom'>
+    <view class='add_picture_box'>
+      <image class='add_picture' id='add_picture_one' src='{{file_one}}' bindtap='onclick_add_picture_one'></image>
+      <image class='add_picture' id='add_picture_two' src='{{file_two}}' bindtap='onclick_add_picture_two' hidden='{{isHiddenPictureTwo}}'></image>
+      <image class='add_picture' id='add_picture_three' src='{{file_three}}' bindtap='onclick_add_picture_three'  hidden='{{isHiddenPictureThree}}'></image>
+    </view>
+
+    <view class='signature'>
+      <text>寄信人：\n曾经的你\n</text>
+      <text>{{time_Wirte}}</text>
+>>>>>>> dev
     </view>
 
     <cover-view class='recordingMask' style='display:{{maskFlag}}'>

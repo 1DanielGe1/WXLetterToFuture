@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "pages": [
     "pages/letter_write/letter_write",
     "pages/letter_style/letter_style",
@@ -49,4 +50,55 @@
     }
   },
   "sitemapLocation": "sitemap.json"
+=======
+    "pages": [
+        "pages/letter_main/letter_main",
+        "pages/letter_write/letter_write",
+        "pages/letter_detail/letter_detail",
+        "pages/letter_send/letter_send",
+        "pages/letter_envelope/letter_envelope",
+        "pages/square_main/square_main",
+        "pages/square_detail/square_detail",
+        "pages/me_main/me_main",
+        "pages/me_setting/me_setting"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#7f8389",
+        "selectedColor": "#FFBC00",
+        "backgroundColor": "#F8F8F8",
+        "borderStyle": "black",
+        "list": [
+            {
+                "text": "信件",
+                "pagePath": "pages/letter_main/letter_main",
+                "iconPath": "assets/letter_bottom.png",
+                "selectedIconPath": "assets/letter_bottom_active.png"
+            },
+            {
+                "text": "广场",
+                "pagePath": "pages/square_main/square_main",
+                "iconPath": "assets/square_bottom.png",
+                "selectedIconPath": "assets/square_bottom_active.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/me_main/me_main",
+                "iconPath": "assets/me_bottom.png",
+                "selectedIconPath": "assets/me_bottom_active.png"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置展示"
+        }
+    },
+    "sitemapLocation": "sitemap.json"
+>>>>>>> dev
 }

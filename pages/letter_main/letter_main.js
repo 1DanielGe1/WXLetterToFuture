@@ -89,5 +89,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  bindtap_addNewLetter:function(){
+      wx.navigateTo({
+          url: '../letter_write/letter_write'
+      })
   }
 })

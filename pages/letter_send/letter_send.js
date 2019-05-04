@@ -101,7 +101,17 @@ Page({
     this.setData({
       openDate: e.detail.value
     })
+<<<<<<< HEAD
   },
+=======
+},
+
+onclick_SendLetter:function(){
+    wx.navigateBack({
+        
+    })
+}
+>>>>>>> dev
 
   send_comfirm: function() {
     
