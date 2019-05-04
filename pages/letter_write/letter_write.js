@@ -5,23 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-    file_one: "/assets/letter_letter_write_addPicture.png",
-    file_two: "/assets/letter_letter_write_addPicture.png",
-    file_three: "/assets/letter_letter_write_addPicture.png",
-    time_Wirte: "2019/4/9",
+    file_one: "/assets/addPicture.png",
+    file_two: "/assets/addPicture.png",
+    file_three: "/assets/addPicture.png",
+    file_two_hidden: true,
+    file_three_hidden: true,
+    write_time: "2019/04/30",
     locationName: "获取当前位置",
     maskFlag: "none",
     openRecordingdis: "block",
     stopRecordingdis: "none",
+    recordingFilePath: "none",
     playRecordingdis: "none",
-    firstChooseLocation: true
+    firstChooseLocation: true,
+    userInput: ""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    var that = this;
+    var timestamp = Date.parse(new Date());
+    var date = new Date(timestamp);
+    var Y = date.getFullYear();
+    var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1);
+    var D = (date.getDate() < 10 ? '0' + date.getDate() : date.getDate());
+    that.setData({
+      write_time: Y + '/' + M + '/' + D
+    })
   },
 
   /**
@@ -96,7 +108,8 @@ Page({
       success: function(res) {
         // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
         that.setData({
-          file_one: res.tempFilePaths
+          file_one: res.tempFilePaths[0],
+          file_two_hidden: false
         });
       }
     })
@@ -110,7 +123,8 @@ Page({
       success: function(res) {
         // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
         that.setData({
-          file_two: res.tempFilePaths
+          file_two: res.tempFilePaths[0],
+          file_three_hidden: false
         });
       }
     })
@@ -124,15 +138,28 @@ Page({
       success: function(res) {
         // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
         that.setData({
-          file_three: res.tempFilePaths
+          file_three: res.tempFilePaths[0]
         });
       }
     })
   },
 
-  onclick_SaveLetter: function() {
+  onclick_next: function() {
+    var that = this;
+    wx.setStorage({
+      key: "letter_write",
+      data: {
+        file_one: that.data.file_one,
+        file_two: that.data.file_two,
+        file_three: that.data.file_three,
+        write_time: that.data.write_time,
+        recordingFilePath: that.data.recordingFilePath,
+        locationName: that.data.locationName,
+        userInput: that.data.userInput
+      }
+    })
     wx.navigateTo({
-      url: '../letter_send/letter_send',
+      url: "/pages/letter_style/letter_style",
       success: function(res) {},
       fail: function(res) {},
       complete: function(res) {},
@@ -192,9 +219,9 @@ Page({
     var that = this;
     const recorderManager = wx.getRecorderManager();
     recorderManager.onStop((res) => {
-      var global = getApp(); // 测试用
-      global.tempFilePath = res.tempFilePath; //  测试用
-      console.log(res, '获取录制完的链接')
+      that.setData({
+        recordingFilePath: res.tempFilePath
+      })
     })
     recorderManager.stop();
     that.setData({
@@ -205,10 +232,8 @@ Page({
 
   playRecording: function() {
     var that = this;
-    var global = getApp(); // 测试用
-    var tempFilePath = global.tempFilePath; // 测试用
     const innerAudioContext = wx.createInnerAudioContext();
-    innerAudioContext.src = tempFilePath;
+    innerAudioContext.src = that.data.recordingFilePath;
     innerAudioContext.onPlay(() => {
       console.log('开始播放')
     })
@@ -237,13 +262,21 @@ Page({
         } else {
           wx.chooseLocation({
             success: function(res) {
-              that.setData({
-                locationName: res.name
-              })
+              if (res.name != "") {
+                that.setData({
+                  locationName: res.name
+                })
+              }
             }
           })
         }
       }
+    })
+  },
+
+  getUserInput: function(e) {
+    this.setData({
+      userInput: e.detail.value
     })
   }
 })

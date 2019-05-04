@@ -1,0 +1,279 @@
+/* pages/letter_style/letter_style.wxss */
+.mypage {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.container {
+  width: 700rpx;
+  height: 100%;
+}
+
+.letter_input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+  border: 1rpx solid #9b9b9b;
+}
+
+.backgroundImage {
+  position: fixed;
+  left: 25rpx;
+  top: 0;
+  width: 700rpx;
+  height: 90%;
+  z-index: -1;
+}
+
+.letter_choose_container {
+  display: flex;
+  height: 8%;
+  flex-direction: row;
+}
+
+.top_style {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.top_recording {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.paper_font {
+  border: 1rpx solid #9b9b9b;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20rpx;
+}
+
+.top_letterPaper_icon {
+  width: 70rpx;
+  height: 58rpx;
+}
+
+.top_font_icon {
+  width: 70rpx;
+  height: 50rpx;
+  margin-left: 10rpx;
+}
+
+.top_recording_icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+
+.letter_input_container {
+  width: 660rpx;
+  height: 76%;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+/*隐藏滚动条*/
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.input_text {
+  width: 100%;
+  white-space: pre-wrap;
+  font-size: 28rpx;
+}
+
+.letter_input_bottom {
+  width: 100%;
+  height: 16%;
+  display: flex;
+  flex-direction: row;
+}
+
+.add_picture_box {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.add_picture {
+  margin-left: 12rpx;
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.signature {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signature_text {
+  margin-left: 5rpx;
+  font-size: 28rpx;
+}
+
+.letter_bottom {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.location_box {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon_location {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.location_text {
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #9b9b9b;
+}
+
+.btn_next_box {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_next {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.paperFontMask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(153, 153, 153, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 9000;
+}
+
+.maskDisplay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.paperFont_box {
+  width: 100%;
+  height: 60%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.letterPaper_box {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top_name_paper {
+  height: 12%;
+  font-size: 30rpx;
+}
+
+.radio-group-paper {
+  width: 100%;
+  height: 88%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.backgroundName {
+ font-size: 25rpx;
+}
+
+.backgroundReview {
+  width: 160rpx;
+  height: 200rpx;
+}
+
+.top_name_font {
+  height: 12%;
+  font-size: 30rpx;
+}
+
+.radio-group-font {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.font_box {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fontReview {
+  width: 160rpx;
+  height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fontImage {
+  width: 160rpx;
+  height: 66rpx;
+}
+
+.confirm_box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  height: 70rpx;
+  background-color: white;
+}
+
+.confirm_icon {
+  margin-right: 40rpx;
+  width: 50rpx;
+  height: 50rpx;
+}

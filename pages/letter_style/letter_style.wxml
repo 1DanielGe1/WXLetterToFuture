@@ -1,0 +1,77 @@
+<view class="mypage">
+  <view class="container">
+    <view class="letter_input" style="{{backgroundImage}}">
+      <view class="letter_choose_container">
+        <view class="top_style">
+          <view class="paper_font" bindtap="showPaperFont">
+            <image class="top_letterPaper_icon" src="/assets/letterPaper.png"></image>
+            <image class="top_font_icon" src="/assets/font.png"></image>
+          </view>
+        </view>
+        <view class="top_recording">
+          <image class="top_recording_icon" src="/assets/top_playRecording.png" bindtap="playRecording" hidden="{{recording_hidden}}"></image>
+        </view>
+      </view>
+      <scroll-view class="letter_input_container" scroll-y="true">
+        <text class="input_text" space="true" decode="true" style="{{family}}">{{userInput}}</text>
+      </scroll-view>
+      <view class="letter_input_bottom">
+        <view class="add_picture_box">
+          <image class="add_picture" src="{{file_one}}" hidden="{{file_one_hidden}}"></image>
+          <image class="add_picture" src="{{file_two}}" hidden="{{file_two_hidden}}"></image>
+          <image class="add_picture" src="{{file_three}}" hidden="{{file_three_hidden}}"></image>
+        </view>
+        <view class="signature" style="{{family}}">
+          <text class="signature_text">寄信人：</text>
+          <text class="signature_text">曾经的你</text>
+          <text class="signature_text">{{write_time}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="letter_bottom">
+      <view class='location_box'>
+        <image class='icon_location' src='/assets/location.png' hidden='{{location_hidden}}'></image>
+        <text class='location_text' hidden='{{location_hidden}}'>{{locationName}}</text>
+      </view>
+      <view class="btn_next_box">
+        <image class='btn_next' src='/assets/next.png' bindtap='onclick_next'></image>
+      </view>
+    </view>
+
+    <view class="paperFontMask" style="display:{{paperFontMaskFlag}}">
+      <view class="maskDisplay">
+        <view class="paperFont_box">
+          <view class="letterPaper_box">
+            <text class="top_name_paper">信纸：</text>
+            <radio-group class="radio-group-paper" bindchange="radioChange_paper">
+              <label class="radio" wx:for="{{backgrounds}}">
+                <radio value="{{item.name}}" checked="{{item.checked}}" />
+                <text class="backgroundName">{{item.value}}</text>
+                <view class="backgroundReview" style="background-color:#AEDD81" wx:if="{{item.def}}"></view>
+                <image class="backgroundReview" src="{{item.src}}" wx:else></image>
+              </label>
+            </radio-group>
+          </view>
+          <view class="font_box">
+            <text class="top_name_font">字体：</text>
+            <radio-group class="radio-group-font" bindchange="radioChange_font">
+              <label class="radio" wx:for="{{fonts}}">
+                <radio value="{{item.name}}" checked="{{item.checked}}" />
+                <text class="backgroundName">{{item.value}}</text>
+                <view class="fontReview" wx:if="{{item.def}}">
+                  <text style="font-size:30rpx">系统字体</text>
+                </view>
+                <view class="fontReview" wx:else>
+                  <image class="fontImage" src="{{item.src}}"></image>
+                </view>
+              </label>
+            </radio-group>
+          </view>
+        </view>
+        <view class="confirm_box">
+          <image class="confirm_icon" src="/assets/confirm.png" catchtap="paperFontConfirm"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

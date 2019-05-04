@@ -1,100 +1,91 @@
 /* pages/letter_send/letter_send.wxss */
-
-.container{
-    display: flex;
-    padding: 50rpx 25rpx 25rpx 25rpx;
-    flex-direction: column;
-    flex-wrap: nowrap;
+.mypage {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
-
-.normal_text {
-    display: flex;
-    margin-left: 100rpx;
-    font-size: 20px;
-    height: 100rpx;
-    justify-content: left;
-    align-items: center;
+.container{
+  width: 700rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .mailbox {
-    display: flex;
-    margin: 0rpx 100rpx;
-    height: 70rpx;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 18px;
-    border-bottom: 1px solid #9b9b9b;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 15%;
+  justify-content: space-around;
+  font-size: 36rpx;
+  border-bottom: 1rpx solid #9b9b9b;
 }
 
-#email_address {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.sendEmail_text {
+  font-size: 40rpx;
+}
+
+.email_address {
+  width: 100%;
 }
 
 .timebox {
-    display: flex;
-    margin: 0rpx 100rpx;
-     height: 70rpx;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 18px;
+  display: flex;
+  width: 100%;
+  height: 15%;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 36rpx;
+  border-bottom: 1rpx solid #9b9b9b;
 }
 
-#email_time {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.sendTime_text {
+  font-size: 40rpx;
+}
+
+.email_time {
+  width: 100%;
+}
+
+.tipbox {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .tip_text {
-    display: flex;
-    height: 70rpx;
-    margin: 0rpx 100rpx;
-    padding-bottom: 50rpx;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 12px;
-    border-bottom: 1px solid #9b9b9b;
+  font-size: 36rpx;
+  border-bottom: 1rpx solid #9b9b9b;
+}
+
+.bottom_textbox {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .bottom_text {
-    display: flex;
-    margin-left: 100rpx;
-    padding-top: 50rpx;
-    font-size: 18px;
+  margin-left: 40rpx;
+  font-size: 36rpx;
+}
+
+.btn_sendbox {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 .btn_send {
-    display: flex;
-    margin-top: -50rpx;
-    margin-left: 520rpx;
-    width: 100rpx;
-    height: 100rpx;
-    padding: 15rpx;
-    border-radius: 50%;
-    border: 2px solid #9b9b9b;
-}
-
-.link_to_envelope {
-    display: flex;
-    margin: 10rpx 100rpx;
-    font-size: 14px;
-}
-
-.link_to_envelope ::selection {
-    background: black;
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 40rpx;
 }

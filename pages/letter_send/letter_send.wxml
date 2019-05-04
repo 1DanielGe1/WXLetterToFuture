@@ -1,41 +1,31 @@
 <!--pages/letter_send/letter_send.wxml-->
-<view class='container'>
-
-
-  <text class='normal_text'>寄给:</text>
-
-
-  <view class="mailbox">
-    <input id="email_address" type="text" placeholder="请您的输入邮箱......" />
+<view class="mypage">
+  <view class="container">
+    <view class="mailbox">
+      <text class="sendEmail_text">寄给:</text>
+      <input class="email_address" type="text" placeholder="请您的输入邮箱......" bindinput='getUserEmail' />
+    </view>
+    <view class="timebox">
+      <text class="sendTime_text">寄往:</text>
+      <picker mode="date" value="{{openDate}}" start="2019-05-01" end="2029-05-01" bindchange="bindDateChange">
+        <text class="email_time">{{openDate}}</text>
+      </picker>
+    </view>
+    <view class="tipbox">
+      <text class="tip_text">我们会在您指定的日子，通过邮箱提醒您</text>
+    </view>
+    <view class="bottom_textbox">
+      <text class="bottom_text">时间不问归处</text>
+      <text class="bottom_text">这封寄往未来的信</text>
+      <text class="bottom_text">不可查找</text>
+      <text class="bottom_text">不可撤回</text>
+      <text class="bottom_text">就此消失</text>
+      <text class="bottom_text">直到那一天</text>
+      <text class="bottom_text">枝繁叶茂</text>
+      <text class="bottom_text">等待收获</text>
+    </view>
+    <view class="btn_sendbox">
+      <image class="btn_send" src="/assets/letterSend_icon.png" bindtap='send_comfirm'></image>
+    </view>
   </view>
-
-
-  <text class='normal_text'>寄往:</text>
-
-  <view class="timebox">
-    <input id="email_time" type="text" placeholder="2029年 05月 01日" />
-  </view>
-
-
-  <text class='tip_text'>我们会在您指定的日子，将您的信投递到您的邮箱\n</text>
-
-
-
-
-  <text class='bottom_text'>时间不问归处
-这封寄往未来的信
-不可查找
-不可撤回
-就此消失
-直到那一天
-枝繁叶茂
-等待收获</text>
-
-
-  <image class='btn_send' src='../../assets/letter_letter_send_btnsend.png'></image>
-
-
-  <text class='link_to_envelope' bindtap='linkToEnvelope'>获取精美纸质信件......</text>
-
-
 </view>

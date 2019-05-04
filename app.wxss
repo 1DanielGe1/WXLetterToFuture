@@ -2,6 +2,10 @@
 @import 'style/weui.wxss';
 
 .container {
-  padding: 25rpx;
-} 
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}
 
+.page {
+  height: 100%;
+}
